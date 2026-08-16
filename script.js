@@ -21,10 +21,10 @@ fnd.addEventListener('click', () => {
             vAleat++
             break;
         case 1:
-            fond.style.setProperty('--imgFond', "url('racines.png')")
             reper.forEach(element => {
                 element.style.setProperty('visibility', 'visible')
             });
+            fond.style.setProperty('--imgFond', "url('racines.png')")
             vAleat++
             break;
         case 2:
