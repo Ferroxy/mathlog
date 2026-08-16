@@ -11,8 +11,8 @@ let vAleat = 0
 fnd.addEventListener('click', () => {
     // const vAleat = Math.floor(Math.random() * 2)
     const fond = document.querySelector(':root')
-    const rep = vAleat % 3
-    switch (rep % 3) {
+    //const rep = vAleat % 3
+    switch (vAleat % 3) {
         case 0:
             fond.style.setProperty('--imgFond', "url('soldier.png')")
             reper.forEach(element => {
