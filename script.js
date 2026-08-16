@@ -16,7 +16,7 @@ fnd.addEventListener('click', () => {
         case 2:
             fond.style.setProperty('--imgFond', "url('soldier.png')")
             reper.forEach(element => {
-                element.style.setProperty('visibility', 'hidden')
+                element.style.setProperty('visibility', 'visible')
             });
             vAleat++
             break;
@@ -27,7 +27,7 @@ fnd.addEventListener('click', () => {
         case 0:
             fond.style.setProperty('--imgFond', "url('')")
             reper.forEach(element => {
-                element.style.setProperty('visibility', 'visible')
+                element.style.setProperty('visibility', 'hidden')
             });
             vAleat++
             break;
