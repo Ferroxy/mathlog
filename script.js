@@ -14,21 +14,21 @@ fnd.addEventListener('click', () => {
     const rep = vAleat % 3
     switch (rep % 3) {
         case 0:
-            fond.style.setProperty('--imgFond', "url('')")
+            fond.style.setProperty('--imgFond', "url('soldier.png')")
             reper.forEach(element => {
-                element.style.setProperty('visibility', 'hidden')
+                element.style.setProperty('visibility', 'visible')
             });
             vAleat++
             break;
         case 1:
-            reper.forEach(element => {
-                element.style.setProperty('visibility', 'visible')
-            });
             fond.style.setProperty('--imgFond', "url('racines.png')")
             vAleat++
             break;
         case 2:
-            fond.style.setProperty('--imgFond', "url('soldier.png')")
+            fond.style.setProperty('--imgFond', "url('')");
+            reper.forEach(element => {
+                element.style.setProperty('visibility', 'hidden')
+            });
             vAleat++
             break;
     }
