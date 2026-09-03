@@ -39,6 +39,12 @@ body {
     box-shadow: 0 0 1.3em .3em #ff2804;
 }
 
+.no-focus-total {
+    tabindex: -1; /* Bloque le clavier */
+    pointer-events: none; /* Bloque la souris (clics, survol) */
+    user-select: none; /* Empêche la sélection de texte */
+}
+
 .sign {
     position: absolute;
     transform: rotateY(30deg);
